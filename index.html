@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,45 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-第一" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/05/第一/" class="article-date">
+  <time datetime="2016-11-05T07:35:38.000Z" itemprop="datePublished">2016-11-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="char类型"><a href="#char类型" class="headerlink" title="char类型"></a>char类型</h4><ul>
+<li>char类型变量占用1个字节</li>
+<li>char类型的数据可以对照ASCII表转换成整型</li>
+<li>C语言不看怎么存，只看怎么取</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">char</span> charValue = <span class="string">'A'</span>;</div><div class="line"><span class="built_in">printf</span>(<span class="string">"%c\n"</span>, charValue);<span class="comment">// 输出A</span></div><div class="line"><span class="built_in">printf</span>(<span class="string">"%c\n"</span>, charValue);<span class="comment">// 输出65</span></div><div class="line"></div><div class="line"><span class="comment">// 字符6和数字6是完全不相同的两个数</span></div><div class="line"><span class="keyword">char</span> c1 = <span class="number">6</span>;</div><div class="line"><span class="keyword">char</span> c2 = <span class="string">'6'</span>;</div><div class="line"><span class="built_in">printf</span>(<span class="string">"%i\n"</span>,c1);<span class="comment">// 输出6</span></div><div class="line"><span class="built_in">printf</span>(<span class="string">"%i\n"</span>,c2);<span class="comment">// 输出54</span></div></pre></td></tr></table></figure>
+<ul>
+<li>char类型在某些情况下可以当做整型来使用</li>
+<li><p>char取值范围 -2(7) ~ 2(7)-1 -&gt; -128 ~ 127</p>
+</li>
+<li><p>将大写字母转换成小写字母</p>
+</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">char</span> <span class="title">lowerValue</span><span class="params">(<span class="keyword">char</span> charValue)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="comment">/*</span></div><div class="line">     注意：开发中不要写这些数字</div><div class="line">    if(charValue &gt;= 65 &amp;&amp; charValue &lt;= 90)&#123;</div><div class="line">        charValue = charValue + 32;</div><div class="line">    &#125;</div><div class="line">     */</div><div class="line">    <span class="keyword">if</span>(charValue &gt;= <span class="string">'A'</span> &amp;&amp; charValue &lt;= <span class="string">'Z'</span>)&#123;</div><div class="line">        charValue = charValue + (<span class="string">'a'</span> - <span class="string">'A'</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> charValue;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/05/第一/" data-id="civ4wbops0002nabyyteo3i7j" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-第一篇博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -90,7 +129,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/05/第一篇博客/" data-id="civ4w8ena0001mubynvb6npf0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/05/第一篇博客/" data-id="civ4wbopa0001nabyqhd7bwvx" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -135,7 +174,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/05/hello-world/" data-id="civ4w8en40000mubyfvb4ob8v" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/05/hello-world/" data-id="civ4wbop40000naby8y46d19q" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -170,9 +209,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/11/05/第一/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2016/11/05/第一篇博客/">(no title)</a>
@@ -195,7 +238,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>

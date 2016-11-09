@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/categories-sourcecode/index.html</loc>
+    
+    <lastmod>2016-11-09T06:50:36.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/11/09/%E7%AC%AC%E4%B8%80%E7%AF%87/</loc>
     
     <lastmod>2016-11-09T06:26:25.000Z</lastmod>
